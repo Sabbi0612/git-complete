@@ -44,4 +44,14 @@ git checkout — filename
 git mv file-to-be-renamed new-name
 
 ```
+### Creating Alias for git commands
 
+* Suppose I want to make an alias for the command "git status" to "git s”
+    * Command will be git config --global alias.s “status"
+* Suppose I want to make an alias for the command "git log --all --online --graph --decorate" to "git hist”
+    * Command will be git config --global alias.hist “log --all --online --graph --decorate”
+* Important :
+    * --global => tells that this command is for user level
+    * alias => tells that we are creating an alias
+    * .s or .hist refers to the new alias to be created
+    * “command exclusive of git keyword that needs an alias”.
