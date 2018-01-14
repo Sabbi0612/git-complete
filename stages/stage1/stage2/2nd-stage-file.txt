@@ -1,3 +1,0 @@
-Stage-2
-This File represents the Second Stage of the Stage Directory.
-

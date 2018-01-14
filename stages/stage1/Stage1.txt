@@ -1,3 +1,0 @@
-Stage-1
-This File represents the First Stage of the Stage Directory.
-
