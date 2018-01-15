@@ -55,3 +55,24 @@ git mv file-to-be-renamed new-name
     * **alias** => tells that we are creating an alias
     * **.s or .hist** refers to the new alias to be created
     * “**command exclusive of git keyword** that needs an alias”.
+
+## Ways of renaming an existing file:
+* **Renaming a file using Git**
+    * Command - **git mv existing-filename new-filename**
+    * This command is used for renaming the files using git.
+    * (Important)This automatically adds the file to the staging area.
+
+* **Renaming a file using bash**
+    * Command - **mv existing-filename new-filename**
+    * Running this command, for git it's like we have deleted an existing file and added a new file (with previous name).
+    * To make git know that we have just renamed it we need to run another command **git add -A** to tell git that we have just renamed the file.
+
+* If we want to rename the file back to what it was originally then in that case we can directly rename the file to what it was instead if using the git reset HEAD command and if the file is renamed to what it was originally then git will display a clean working directory.
+
+
+### Ways of safely moving an existing file:
+* To move a file to another folder using terminal
+    * **git mv filename new-location**
+
+* Move a file using bash or by Finder(folder structure)
+    * **mv filename new-location** - Just like previously it seems to git that we have deleted a file and created a new file in the new location so to tell git that w have  just moved the file to a new location we need to do **git add -A**
